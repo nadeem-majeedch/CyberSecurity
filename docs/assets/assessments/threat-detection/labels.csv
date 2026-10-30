@@ -1,0 +1,44 @@
+id,label,note
+E001,benign,
+E002,malicious,T1059.001 office macro
+E003,malicious,T1053.005
+E004,malicious,T1105
+E005,malicious,T1490
+E006,benign,
+E007,malicious,T1059.001 office macro
+E008,malicious,T1053.005
+E009,malicious,T1105
+E010,benign,approved change CHG-1042
+E011,benign,approved maintenance task
+E012,benign,
+E013,benign,
+E014,benign,
+E015,benign,
+E016,benign,
+E017,benign,
+E018,benign,
+E019,benign,
+E020,benign,
+E021,benign,
+E022,benign,
+E023,benign,
+E024,benign,
+E025,benign,
+E026,benign,
+E027,benign,
+E028,benign,
+E029,benign,
+E030,benign,
+E031,benign,
+E032,benign,
+E033,benign,
+E034,benign,
+E035,benign,
+E036,benign,
+E037,benign,
+E038,benign,
+E039,benign,
+E040,benign,
+E041,benign,
+E042,benign,
+E043,benign,

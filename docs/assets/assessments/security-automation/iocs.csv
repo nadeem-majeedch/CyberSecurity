@@ -1,0 +1,9 @@
+indicator,type,verdict,confidence,source,first_seen
+203.0.113.45,ip,malicious,high,feed-alpha,2026-09-30
+198.51.100.23,ip,malicious,medium,feed-beta,2026-10-01
+198.51.100.88,ip,malicious,low,feed-beta,2026-08-11
+cdn-sync.example,domain,malicious,high,feed-alpha,2026-10-02
+198.51.100.7,ip,benign,high,asset-register,2026-01-05
+198.51.100.90,ip,benign,medium,asset-register,2026-01-05
+update.vendor.example,domain,benign,high,allowlist,2026-02-20
+10.10.20.50,ip,benign,high,asset-register,2026-01-05

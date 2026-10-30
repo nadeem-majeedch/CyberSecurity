@@ -1,0 +1,5 @@
+host,role,os,clock_offset_seconds,notes
+WS-014,workstation,Windows 11,0,"user workstation, finance"
+FS-01,file server,Windows Server 2022,420,"file server, finance share"
+DC-01,domain controller,Windows Server 2022,0,domain controller
+SCAN-01,vulnerability scanner,Ubuntu 24.04,0,"scheduled scanner, runs 08:00-10:00"

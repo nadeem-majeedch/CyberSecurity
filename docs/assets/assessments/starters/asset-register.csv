@@ -1,0 +1,6 @@
+asset_id,hostname,ip,role,os_and_version,owner,exposure,services_confirmed,evidence_file,notes
+A-01,lab-router,10.10.10.1,gateway,OpenWrt 23.05,lab,internal,,,management interface
+A-02,lab-dc,10.10.10.10,domain controller,Windows Server 2022,lab,internal,,,
+A-03,lab-web,10.10.10.20,web server,Ubuntu 24.04,lab,internal,,,
+A-04,lab-fs,10.10.10.30,file server,Windows Server 2022,lab,internal,,,
+A-05,lab-analyst,10.10.10.100,analyst workstation,Kali 2026.3,lab,none,,,no inbound services expected

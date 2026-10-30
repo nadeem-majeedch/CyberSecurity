@@ -1,0 +1,362 @@
+site_name: Cyber Security — Self-Study Program
+site_description: A safety-first, self-paced cybersecurity curriculum from foundations to capstone, taught at PUCIT, University of the Punjab.
+site_author: Engr. Dr. Muhammad Nadeem Majeed
+# Base URL for canonical links and sitemap.xml. This is the address GitHub Pages assigns to this
+# project site. Change it to the custom domain if one is ever configured. It does not publish anything.
+site_url: https://nadeem-majeedch.github.io/CyberSecurity/
+repo_url: https://github.com/nadeem-majeedch/CyberSecurity
+repo_name: nadeem-majeedch/CyberSecurity
+edit_uri: edit/main/docs/
+docs_dir: docs
+strict: true
+use_directory_urls: true
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Start Here:
+      - start-here/index.md
+      - How to Study: start-here/how-to-study.md
+      - Prerequisites and Setup: start-here/prerequisites.md
+      - Learning Sequence: start-here/learning-sequence.md
+      - Lab Safety Guide: start-here/lab-safety.md
+      - Troubleshooting: start-here/troubleshooting.md
+      - Assessment Guide: start-here/assessment-guide.md
+      - Project Guide: start-here/project-guide.md
+  - Curriculum:
+      - curriculum/index.md
+      - Full Roadmap: curriculum/roadmap.md
+      - Levels Overview: levels/index.md
+      - Level 1 — Foundations:
+          - Overview: levels/level-1.md
+          - "CYB-101 · Introduction to Cybersecurity":
+              - levels/level-1-foundations/01-introduction-to-cybersecurity/index.md
+              - "What Cybersecurity Is, and What Practitioners Do": levels/level-1-foundations/01-introduction-to-cybersecurity/01-what-cybersecurity-is.md
+          - "CYB-102 · CIA Triad, Security Principles and Risk":
+              - levels/level-1-foundations/02-cia-triad-principles-risk/index.md
+              - "The CIA Triad, Design Principles and Risk": levels/level-1-foundations/02-cia-triad-principles-risk/01-cia-principles-risk.md
+          - "CYB-103 · Threats, Vulnerabilities, Exploits and Controls":
+              - levels/level-1-foundations/03-threats-vulnerabilities-controls/index.md
+              - "Threats, Vulnerabilities, Exploits and Controls": levels/level-1-foundations/03-threats-vulnerabilities-controls/01-threats-and-controls.md
+          - "CYB-104 · Threat Modeling and Attack Surfaces":
+              - levels/level-1-foundations/04-threat-modeling-attack-surfaces/index.md
+              - "Threat Modeling and Attack Surfaces": levels/level-1-foundations/04-threat-modeling-attack-surfaces/01-threat-modeling.md
+          - "CYB-105 · Ethics, Authorization, Responsible Disclosure and Cyber Law":
+              - levels/level-1-foundations/05-ethics-authorization-disclosure-law/index.md
+              - "Ethics, Authorization, Responsible Disclosure and Cyber Law": levels/level-1-foundations/05-ethics-authorization-disclosure-law/01-ethics-law.md
+          - "CYB-106 · Computer Hardware, Operating Systems, Files, Processes and Permissions":
+              - levels/level-1-foundations/06-computer-hardware-os-fundamentals/index.md
+              - "Hardware, Operating Systems, Files, Processes and Permissions": levels/level-1-foundations/06-computer-hardware-os-fundamentals/01-hardware-os-files-processes.md
+          - "CYB-107 · Networking Fundamentals and the OSI/TCP-IP Models":
+              - levels/level-1-foundations/07-networking-fundamentals/index.md
+              - "Layered Networking and Encapsulation": levels/level-1-foundations/07-networking-fundamentals/01-osi-tcpip.md
+              - "LAB-107-01 · Capture a Local Exchange": levels/level-1-foundations/07-networking-fundamentals/lab-01-capture-local-traffic.md
+          - "CYB-108 · IP Addressing, Subnets and Core Protocols":
+              - levels/level-1-foundations/08-addressing-and-protocols/index.md
+              - "IPv4 Addressing, Subnets, ARP, DNS and DHCP": levels/level-1-foundations/08-addressing-and-protocols/01-addressing-subnets-dns.md
+              - "TCP, UDP, HTTP, HTTPS and TLS": levels/level-1-foundations/08-addressing-and-protocols/02-tcp-udp-http-tls.md
+              - "LAB-108-01 · Inspect Network Configuration": levels/level-1-foundations/08-addressing-and-protocols/lab-01-network-configuration.md
+              - "LAB-108-02 · Read DNS Lookup Results": levels/level-1-foundations/08-addressing-and-protocols/lab-02-dns-lookups.md
+          - "CYB-109 · Linux Command-Line Fundamentals":
+              - levels/level-1-foundations/09-linux-command-line/index.md
+              - "Working in the Linux Shell": levels/level-1-foundations/09-linux-command-line/01-linux-shell.md
+              - "LAB-109-01 · Files, Permissions and Ownership": levels/level-1-foundations/09-linux-command-line/lab-01-files-permissions.md
+              - "LAB-109-02 · Processes, Listening Ports and Logs": levels/level-1-foundations/09-linux-command-line/lab-02-processes-listeners-logs.md
+          - "CYB-110 · Windows Fundamentals and PowerShell Basics":
+              - levels/level-1-foundations/10-windows-powershell-basics/index.md
+              - "The Windows Security Model and PowerShell": levels/level-1-foundations/10-windows-powershell-basics/01-windows-powershell.md
+              - "LAB-110-01 · Inspect a Windows Host": levels/level-1-foundations/10-windows-powershell-basics/lab-01-windows-inspection.md
+          - "CYB-111 · Virtualization, Snapshots and Isolated Lab Networks":
+              - levels/level-1-foundations/11-virtualization-and-lab-networks/index.md
+              - "Virtualization and Isolated Lab Design": levels/level-1-foundations/11-virtualization-and-lab-networks/01-virtualization-lab-design.md
+              - "LAB-111-01 · Build and Verify an Isolated Network": levels/level-1-foundations/11-virtualization-and-lab-networks/lab-01-isolated-network.md
+          - "CYB-112 · Introduction to Kali Linux":
+              - levels/level-1-foundations/12-kali-linux/index.md
+              - "Kali Linux in Context": levels/level-1-foundations/12-kali-linux/01-kali-in-context.md
+          - "CYB-113 · Introduction to Cryptography, Hashing and Digital Signatures":
+              - levels/level-1-foundations/13-cryptography-hashing-signatures/index.md
+              - "Cryptography You Will Actually Use": levels/level-1-foundations/13-cryptography-hashing-signatures/01-crypto-hashing-signatures.md
+              - "LAB-113-01 · Hashes, File Integrity and Signatures": levels/level-1-foundations/13-cryptography-hashing-signatures/lab-01-hashing-integrity.md
+          - "CYB-114 · Password Security, MFA, Phishing Awareness and Personal Security":
+              - levels/level-1-foundations/14-passwords-mfa-phishing/index.md
+              - "Passwords, MFA and Phishing": levels/level-1-foundations/14-passwords-mfa-phishing/01-passwords-mfa-phishing.md
+              - "LAB-114-01 · Triage Synthetic Phishing Emails": levels/level-1-foundations/14-passwords-mfa-phishing/lab-01-phishing-triage.md
+              - "LAB-114-02 · Assess a Password Policy": levels/level-1-foundations/14-passwords-mfa-phishing/lab-02-password-policy.md
+          - "CYB-115 · Introduction to Security Logs and Basic Troubleshooting":
+              - levels/level-1-foundations/15-security-logs-and-troubleshooting/index.md
+              - "Reading Logs and Troubleshooting Methodically": levels/level-1-foundations/15-security-logs-and-troubleshooting/01-logs-and-troubleshooting.md
+              - "LAB-115-01 · Follow an Evidence Trail": levels/level-1-foundations/15-security-logs-and-troubleshooting/lab-01-evidence-trail.md
+      - Level 2 — Tooling and Lab Craft:
+          - Overview: levels/level-2.md
+          - "CYB-201 · Lab Environment, Kali and Network Foundations":
+              - levels/level-2-tooling/01-lab-environment-and-kali/index.md
+              - "Preparing the Analyst Environment": levels/level-2-tooling/01-lab-environment-and-kali/01-lab-environment.md
+              - "LAB-201-01 · Prepare and Verify a Kali VM": levels/level-2-tooling/01-lab-environment-and-kali/lab-01-prepare-kali-vm.md
+              - "LAB-201-02 · Configure Host-Only Networking and Record Addresses": levels/level-2-tooling/01-lab-environment-and-kali/lab-02-host-only-network.md
+              - "LAB-201-03 · Validate Connectivity Between Lab Hosts": levels/level-2-tooling/01-lab-environment-and-kali/lab-03-connectivity-validation.md
+          - "CYB-202 · Bash, Python and Git for Lab Work":
+              - levels/level-2-tooling/02-bash-python-git/index.md
+              - "Scripting and Versioning for Repeatable Work": levels/level-2-tooling/02-bash-python-git/01-scripting-and-git.md
+              - "LAB-202-01 · Bash Security-Check Script": levels/level-2-tooling/02-bash-python-git/lab-01-bash-security-check.md
+              - "LAB-202-02 · Python Parser for Synthetic Network Logs": levels/level-2-tooling/02-bash-python-git/lab-02-python-log-parser.md
+              - "LAB-202-03 · Version Lab Artefacts with Git": levels/level-2-tooling/02-bash-python-git/lab-03-git-for-artifacts.md
+          - "CYB-203 · Host Discovery and Service Enumeration":
+              - levels/level-2-tooling/03-host-discovery-and-enumeration/index.md
+              - "Scanning Your Own Lab": levels/level-2-tooling/03-host-discovery-and-enumeration/01-scanning-your-lab.md
+              - "LAB-203-01 · Host Discovery in an Isolated Lab": levels/level-2-tooling/03-host-discovery-and-enumeration/lab-01-host-discovery.md
+              - "LAB-203-02 · Port and Service Enumeration of a Local Target": levels/level-2-tooling/03-host-discovery-and-enumeration/lab-02-service-enumeration.md
+              - "LAB-203-03 · Compare TCP and UDP Behaviour": levels/level-2-tooling/03-host-discovery-and-enumeration/lab-03-tcp-udp-behaviour.md
+              - "LAB-203-04 · Netcat for Controlled Local Demonstrations": levels/level-2-tooling/03-host-discovery-and-enumeration/lab-04-netcat-local.md
+          - "CYB-204 · Packet Capture and Traffic Analysis":
+              - levels/level-2-tooling/04-packet-capture-and-analysis/index.md
+              - "Capture and Read Traffic": levels/level-2-tooling/04-packet-capture-and-analysis/01-capture-and-analysis.md
+              - "LAB-204-01 · Capture with tcpdump and Inspect a pcap": levels/level-2-tooling/04-packet-capture-and-analysis/lab-01-tcpdump-capture.md
+              - "LAB-204-02 · Capture and Analyse with Wireshark": levels/level-2-tooling/04-packet-capture-and-analysis/lab-02-wireshark-analysis.md
+              - "LAB-204-03 · Protocol Analysis: DNS, TCP, HTTP, TLS": levels/level-2-tooling/04-packet-capture-and-analysis/lab-03-protocol-analysis.md
+          - "CYB-205 · OpenSSH and Secure Remote Administration":
+              - levels/level-2-tooling/05-ssh-secure-administration/index.md
+              - "SSH Keys, Configuration and Hardening": levels/level-2-tooling/05-ssh-secure-administration/01-ssh-keys-and-hardening.md
+              - "LAB-205-01 · Key-Based Authentication End to End": levels/level-2-tooling/05-ssh-secure-administration/lab-01-key-based-auth.md
+              - "LAB-205-02 · Audit and Harden sshd Without Locking Yourself Out": levels/level-2-tooling/05-ssh-secure-administration/lab-02-harden-sshd.md
+          - "CYB-206 · Host Inspection, Hardening Assessment and Reporting":
+              - levels/level-2-tooling/06-host-inspection-and-hardening/index.md
+              - "Inspecting a Linux Host": levels/level-2-tooling/06-host-inspection-and-hardening/01-host-inspection.md
+              - "LAB-206-01 · Host Inspection Inventory": levels/level-2-tooling/06-host-inspection-and-hardening/lab-01-host-inventory.md
+              - "LAB-206-02 · Hardening Assessment with Lynis": levels/level-2-tooling/06-host-inspection-and-hardening/lab-02-lynis-assessment.md
+              - "LAB-206-03 · Write the Assessment Report": levels/level-2-tooling/06-host-inspection-and-hardening/lab-03-assessment-report.md
+      - Level 3 — Applications, Cryptography and Identity:
+          - Overview: levels/level-3.md
+          - "CYB-301 · Web Architecture and HTTP for Security":
+              - levels/level-3-applications/01-web-architecture-and-http/index.md
+              - "HTTP, Sessions and the Browser Security Model": levels/level-3-applications/01-web-architecture-and-http/01-http-and-the-browser-security-model.md
+              - "LAB-301-01 · Build the Web Lab": levels/level-3-applications/01-web-architecture-and-http/lab-01-web-lab-setup.md
+              - "LAB-301-02 · Intercept and Annotate a Session": levels/level-3-applications/01-web-architecture-and-http/lab-02-intercept-a-session.md
+              - "LAB-301-03 · Evaluate Cookie and Session Attributes": levels/level-3-applications/01-web-architecture-and-http/lab-03-cookie-and-session-attributes.md
+          - "CYB-302 · Injection and Cross-Site Scripting":
+              - levels/level-3-applications/02-injection-and-xss/index.md
+              - "Injection, Contexts and Encoding": levels/level-3-applications/02-injection-and-xss/01-injection-and-output-encoding.md
+              - "LAB-302-01 · SQL Injection and Its Fix": levels/level-3-applications/02-injection-and-xss/lab-01-sql-injection.md
+              - "LAB-302-02 · Reflected and Stored XSS": levels/level-3-applications/02-injection-and-xss/lab-02-xss.md
+          - "CYB-303 · Access Control, Authentication and Sessions":
+              - levels/level-3-applications/03-access-control-and-authentication/index.md
+              - "Authorization, Identity and Session Integrity": levels/level-3-applications/03-access-control-and-authentication/01-authorization-and-session-integrity.md
+              - "LAB-303-01 · Insecure Login Workflow": levels/level-3-applications/03-access-control-and-authentication/lab-01-insecure-login-workflow.md
+              - "LAB-303-02 · Broken Access Control and IDOR": levels/level-3-applications/03-access-control-and-authentication/lab-02-broken-access-control.md
+              - "LAB-303-03 · Cross-Site Request Forgery": levels/level-3-applications/03-access-control-and-authentication/lab-03-csrf.md
+          - "CYB-304 · File Handling, SSRF and Misconfiguration":
+              - levels/level-3-applications/04-file-handling-ssrf-misconfiguration/index.md
+              - "Files, Requests and Configuration": levels/level-3-applications/04-file-handling-ssrf-misconfiguration/01-files-requests-and-configuration.md
+              - "LAB-304-01 · File Upload Validation": levels/level-3-applications/04-file-handling-ssrf-misconfiguration/lab-01-file-upload.md
+              - "LAB-304-02 · Path Traversal and File Inclusion": levels/level-3-applications/04-file-handling-ssrf-misconfiguration/lab-02-path-traversal.md
+              - "LAB-304-03 · Server-Side Request Forgery": levels/level-3-applications/04-file-handling-ssrf-misconfiguration/lab-03-ssrf.md
+              - "LAB-304-04 · Security Headers, TLS and Misconfiguration": levels/level-3-applications/04-file-handling-ssrf-misconfiguration/lab-04-headers-and-tls.md
+          - "CYB-307 · Secure Coding, Dependencies and Remediation":
+              - levels/level-3-applications/05-secure-coding-and-dependencies/index.md
+              - "Secure Coding, Review and Supply Chain": levels/level-3-applications/05-secure-coding-and-dependencies/01-secure-coding-and-supply-chain.md
+              - "LAB-307-01 · Threat Model and Code Review": levels/level-3-applications/05-secure-coding-and-dependencies/lab-01-code-review-and-threat-model.md
+              - "LAB-307-02 · Vulnerable Dependencies": levels/level-3-applications/05-secure-coding-and-dependencies/lab-02-vulnerable-dependencies.md
+              - "LAB-307-03 · Fix, Test and Verify": levels/level-3-applications/05-secure-coding-and-dependencies/lab-03-fix-and-verify.md
+          - "CYB-308 · API Security":
+              - levels/level-3-applications/06-api-security/index.md
+              - "Authorization, Tokens and Resource Limits": levels/level-3-applications/06-api-security/01-api-authorization-and-tokens.md
+              - "LAB-308-01 · API Authorization Failures": levels/level-3-applications/06-api-security/lab-01-api-authorization.md
+              - "LAB-308-02 · Mass Assignment and Rate Limiting": levels/level-3-applications/06-api-security/lab-02-mass-assignment-and-rate-limiting.md
+      - Level 4 — Defensive Operations:
+          - Overview: levels/level-4.md
+          - "CYB-401 · SOC Operations, ATT&CK and Threat Intelligence":
+              - "Overview": levels/level-4-defensive-operations/01-soc-operations/index.md
+              - "SOC Workflow, ATT&CK and Intelligence": levels/level-4-defensive-operations/01-soc-operations/01-soc-workflow-and-attck.md
+              - "LAB-401-01 · Triage a Synthetic Alert Queue": levels/level-4-defensive-operations/01-soc-operations/lab-01-alert-triage.md
+              - "LAB-401-02 · Map Activity to ATT&CK": levels/level-4-defensive-operations/01-soc-operations/lab-02-attck-mapping.md
+              - "LAB-401-03 · Write a Threat-Intelligence Brief": levels/level-4-defensive-operations/01-soc-operations/lab-03-ioc-brief.md
+          - "CYB-402 · Endpoint Telemetry and Authentication Monitoring":
+              - "Overview": levels/level-4-defensive-operations/02-endpoint-telemetry/index.md
+              - "Endpoint and Authentication Telemetry": levels/level-4-defensive-operations/02-endpoint-telemetry/01-endpoint-and-auth-logs.md
+              - "LAB-402-01 · Windows Event Log Triage": levels/level-4-defensive-operations/02-endpoint-telemetry/lab-01-windows-event-logs.md
+              - "LAB-402-02 · Linux Authentication Log Analysis": levels/level-4-defensive-operations/02-endpoint-telemetry/lab-02-linux-auth-logs.md
+              - "LAB-402-03 · A Suspicious Process Sequence": levels/level-4-defensive-operations/02-endpoint-telemetry/lab-03-sysmon-process-sequence.md
+          - "CYB-403 · Hardening, Baselines and Vulnerability Management":
+              - "Overview": levels/level-4-defensive-operations/03-hardening-and-patching/index.md
+              - "Baselines, Hardening and Patch Priority": levels/level-4-defensive-operations/03-hardening-and-patching/01-baselines-and-patch-priority.md
+              - "LAB-403-01 · Linux Baseline Assessment and Verified Remediation": levels/level-4-defensive-operations/03-hardening-and-patching/lab-01-linux-baseline.md
+              - "LAB-403-02 · Windows Controls You Can Prove": levels/level-4-defensive-operations/03-hardening-and-patching/lab-02-windows-hardening.md
+              - "LAB-403-03 · Vulnerability Prioritisation and Patch Plan": levels/level-4-defensive-operations/03-hardening-and-patching/lab-03-vulnerability-prioritisation.md
+          - "CYB-404 · Detection Engineering and SIEM":
+              - "Overview": levels/level-4-defensive-operations/04-detection-and-siem/index.md
+              - "From Hypothesis to Tested Rule": levels/level-4-defensive-operations/04-detection-and-siem/01-detection-engineering.md
+              - "LAB-404-01 · Deploy a Local SIEM and Ingest Telemetry": levels/level-4-defensive-operations/04-detection-and-siem/lab-01-wazuh-deployment.md
+              - "LAB-404-02 · Write, Convert and Test a Detection": levels/level-4-defensive-operations/04-detection-and-siem/lab-02-sigma-rule.md
+              - "LAB-404-03 · Correlation, Tuning and a Detection Report": levels/level-4-defensive-operations/04-detection-and-siem/lab-03-correlation-and-tuning.md
+          - "CYB-405 · Network Defence and Monitoring":
+              - "Overview": levels/level-4-defensive-operations/05-network-defence/index.md
+              - "Zones, Sensors and What Encryption Hides": levels/level-4-defensive-operations/05-network-defence/01-segmentation-and-monitoring.md
+              - "LAB-405-01 · Segmentation You Can Prove": levels/level-4-defensive-operations/05-network-defence/lab-01-segmentation.md
+              - "LAB-405-02 · Suricata: Detect Traffic You Generated": levels/level-4-defensive-operations/05-network-defence/lab-02-suricata-ids.md
+              - "LAB-405-03 · DNS Behaviour Analysis": levels/level-4-defensive-operations/05-network-defence/lab-03-dns-analysis.md
+          - "CYB-406 · Digital Forensics":
+              - "Overview": levels/level-4-defensive-operations/06-digital-forensics/index.md
+              - "Soundness, Artefacts and Timelines": levels/level-4-defensive-operations/06-digital-forensics/01-forensic-soundness.md
+              - "LAB-406-01 · Evidence Register and Verified Acquisition": levels/level-4-defensive-operations/06-digital-forensics/lab-01-acquisition-and-custody.md
+              - "LAB-406-02 · Disk Triage and a Defensible Timeline": levels/level-4-defensive-operations/06-digital-forensics/lab-02-disk-and-timeline.md
+              - "LAB-406-03 · YARA Classification and Memory Artefacts": levels/level-4-defensive-operations/06-digital-forensics/lab-03-yara-and-memory.md
+          - "CYB-407 · Incident Response":
+              - "Overview": levels/level-4-defensive-operations/07-incident-response/index.md
+              - "Phases, Decisions and Evidence": levels/level-4-defensive-operations/07-incident-response/01-incident-response-phases.md
+              - "LAB-407-01 · Phishing Triage and Scope": levels/level-4-defensive-operations/07-incident-response/lab-01-phishing-triage.md
+              - "LAB-407-02 · Master Timeline from Mixed Evidence": levels/level-4-defensive-operations/07-incident-response/lab-02-timeline.md
+              - "LAB-407-03 · Simulated Ransomware: Contain and Recover": levels/level-4-defensive-operations/07-incident-response/lab-03-ransomware.md
+              - "LAB-407-04 · The Incident Report and Post-Incident Review": levels/level-4-defensive-operations/07-incident-response/lab-04-report-and-review.md
+      - "Level 5 — Advanced Practice":
+          - "Overview": levels/level-5.md
+          - "CYB-501 · Penetration Testing and Security Assessment":
+              - "Overview": levels/level-5-advanced/01-penetration-testing/index.md
+              - "Engagements, Evidence and Impact": levels/level-5-advanced/01-penetration-testing/01-engagement-and-evidence.md
+              - "LAB-501-01 · Scope, Rules of Engagement and Test Plan": levels/level-5-advanced/01-penetration-testing/lab-01-engagement-package.md
+              - "LAB-501-02 · Authorized Assessment of a Lab Target": levels/level-5-advanced/01-penetration-testing/lab-02-lab-assessment.md
+              - "LAB-501-03 · Escalate, Report, Remediate, Retest": levels/level-5-advanced/01-penetration-testing/lab-03-privesc-and-report.md
+          - "CYB-502 · Active Directory Security":
+              - "Overview": levels/level-5-advanced/02-active-directory/index.md
+              - "Identity, Kerberos and Privilege Paths": levels/level-5-advanced/02-active-directory/01-identity-and-kerberos.md
+              - "LAB-502-01 · Build the Isolated Domain": levels/level-5-advanced/02-active-directory/lab-01-build-domain.md
+              - "LAB-502-02 · Enumerate, Map and Audit": levels/level-5-advanced/02-active-directory/lab-02-bloodhound-pingcastle.md
+              - "LAB-502-03 · Detect, Harden, Recover": levels/level-5-advanced/02-active-directory/lab-03-detect-harden-recover.md
+          - "CYB-503 · Cloud Security":
+              - "Overview": levels/level-5-advanced/03-cloud-security/index.md
+              - "Cloud Security Fundamentals": levels/level-5-advanced/03-cloud-security/01-cloud-security-models.md
+              - "LAB-503-01 · Least Privilege and Object Storage": levels/level-5-advanced/03-cloud-security/lab-01-identity-and-storage.md
+              - "LAB-503-02 · Misconfiguration Detection and Audit Logs": levels/level-5-advanced/03-cloud-security/lab-02-misconfiguration-and-audit.md
+              - "LAB-503-03 · Container Hardening": levels/level-5-advanced/03-cloud-security/lab-03-container-hardening.md
+          - "CYB-504 · Malware Analysis and Reverse Engineering":
+              - "Overview": levels/level-5-advanced/04-malware-analysis/index.md
+              - "Static and Dynamic Analysis": levels/level-5-advanced/04-malware-analysis/01-static-and-dynamic.md
+              - "LAB-504-01 · Static Triage": levels/level-5-advanced/04-malware-analysis/lab-01-static-triage.md
+              - "LAB-504-02 · Sandbox and Behaviour": levels/level-5-advanced/04-malware-analysis/lab-02-sandbox-behaviour.md
+              - "LAB-504-03 · YARA Classification": levels/level-5-advanced/04-malware-analysis/lab-03-yara-classification.md
+          - "CYB-505 · Security Automation":
+              - "Overview": levels/level-5-advanced/05-security-automation/index.md
+              - "Automation Discipline": levels/level-5-advanced/05-security-automation/01-automation-discipline.md
+              - "LAB-505-01 · Parse and Normalise Logs": levels/level-5-advanced/05-security-automation/lab-01-log-parsing.md
+              - "LAB-505-02 · Enrichment and Report Normalisation": levels/level-5-advanced/05-security-automation/lab-02-enrichment.md
+              - "LAB-505-03 · Guarded Automation": levels/level-5-advanced/05-security-automation/lab-03-guarded-automation.md
+          - "CYB-506 · Threat Hunting and Detection Engineering":
+              - "Overview": levels/level-5-advanced/06-threat-hunting/index.md
+              - "Hypothesis-Driven Hunting": levels/level-5-advanced/06-threat-hunting/01-hypothesis-driven-hunting.md
+              - "LAB-506-01 · Hunt a Hypothesis": levels/level-5-advanced/06-threat-hunting/lab-01-hunt-hypothesis.md
+              - "LAB-506-02 · Coverage and Blind Spots": levels/level-5-advanced/06-threat-hunting/lab-02-coverage.md
+              - "LAB-506-03 · Validate and Tune": levels/level-5-advanced/06-threat-hunting/lab-03-validate-and-tune.md
+  - Labs: labs/index.md
+  - Assessments:
+      - Overview: assessments/index.md
+      - Level 1 — Foundations:
+          - Module Quizzes: assessments/level-1-quiz.md
+          - Integrated Assessment: assessments/level-1-assessment.md
+          - Answer Key: assessments/level-1-key.md
+      - Level 2 — Tooling:
+          - Module Quizzes: assessments/level-2-quiz.md
+          - Integrated Assessment: assessments/level-2-assessment.md
+          - Answer Key: assessments/level-2-key.md
+      - Level 3 — Applications:
+          - Module Quizzes: assessments/level-3-quiz.md
+          - Integrated Assessment: assessments/level-3-assessment.md
+          - Answer Key: assessments/level-3-key.md
+      - Level 4 — Defensive Operations:
+          - Module Quizzes: assessments/level-4-quiz.md
+          - Integrated Assessment: assessments/level-4-assessment.md
+          - Answer Key: assessments/level-4-key.md
+      - Level 5 — Advanced Practice:
+          - Module Quizzes: assessments/level-5-quiz.md
+          - Integrated Assessment: assessments/level-5-assessment.md
+          - Answer Key: assessments/level-5-key.md
+  - Projects:
+      - Overview: projects/index.md
+      - 1 — Network Security Assessment: projects/01-network-security-assessment.md
+      - 2 — Web Application Security: projects/02-web-application-security.md
+      - 3 — SOC Investigation: projects/03-soc-investigation.md
+      - 4 — Linux Hardening: projects/04-linux-hardening.md
+      - 5 — Threat Detection: projects/05-threat-detection.md
+      - 6 — Security Automation: projects/06-security-automation.md
+      - Starter Files: projects/starter-files.md
+      - Reference Solutions: projects/reference-solutions.md
+  - Policies:
+      - Safety Policy: policies/safety-policy.md
+      - How Assessment Works: policies/assessment-format.md
+      - Assessment Report Template: policies/assessment-report-template.md
+  - Resources:
+      - Glossary: resources/glossary.md
+  - Instructor: instructor/index.md
+  - For Maintainers:
+      - maintainer/index.md
+      - Authoring and Deployment: maintainer/authoring-guide.md
+      - Site Architecture: maintainer/site-architecture.md
+      - Lesson Template: maintainer/lesson-template.md
+      - Lab Template: maintainer/lab-template.md
+      - Quality Checklist: maintainer/quality-checklist.md
+      - Progress Report: maintainer/progress-report.md
+      - Final Quality Audit: maintainer/final-audit.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+
+extra:
+  generator: false
+  social: []
+
+copyright: >
+  Course material by Engr. Dr. Muhammad Nadeem Majeed, Department of Data Science (PUCIT),
+  University of the Punjab, Lahore. Practical work is authorized only within the scope defined by
+  the <a href="policies/safety-policy/">Safety Policy</a>.

@@ -1,0 +1,13 @@
+control_id,domain,control,reference,state_before,state_after,decision,evidence,residual_risk
+H-01,patching,Unattended security upgrades enabled,CIS 1.9,,,apply,,
+H-02,accounts,No accounts with empty passwords,CIS 5.4,,,apply,,
+H-03,accounts,Root login over SSH disabled,CIS 5.2,,,apply,,
+H-04,ssh,Password authentication disabled after keys verified,CIS 5.2,,,apply,,
+H-05,network,Host firewall default-deny inbound,CIS 3.5,,,apply,,
+H-06,services,Unused network services disabled,CIS 2.1,,,apply,,
+H-07,logging,auditd installed and rules loaded,CIS 4.1,,,apply,,
+H-08,logging,Log retention at least 90 days with rotation,CIS 4.1,,,decide,,
+H-09,filesystem,/tmp mounted noexec,nosuid,nodev,CIS 1.1,,,decide,,
+H-10,filesystem,World-writable files reviewed,CIS 6.1,,,apply,,
+H-11,kernel,ASLR enabled,CIS 1.5,,,verify,,
+H-12,access,Sudo requires password and is logged,CIS 5.3,,,apply,,

@@ -1,0 +1,18 @@
+# Findings
+
+1. **HIGH** login_failed from malicious ip 203.0.113.45 on web-01 (confidence: high)
+   - 3 event(s), 2026-10-24T08:12:03Z to 2026-10-24T09:10:00Z, users: admin, oracle, root
+2. **MEDIUM** login_failed from malicious ip 198.51.100.23 on db-01 (confidence: medium)
+   - 3 event(s), 2026-10-24T08:15:44Z to 2026-10-24T08:16:20Z, users: postgres
+3. **HIGH** dns_query from malicious domain cdn-sync.example on ws-014 (confidence: high)
+   - 4 event(s), 2026-10-24T08:25:33Z to 2026-10-24T09:07:12Z, users: m.hassan
+4. **MEDIUM** http_request from malicious ip 198.51.100.23 on web-01 (confidence: medium)
+   - 1 event(s), 2026-10-24T08:37:00Z to 2026-10-24T08:37:00Z, users: www-data
+5. **HIGH** http_request from malicious ip 203.0.113.45 on web-01 (confidence: high)
+   - 1 event(s), 2026-10-24T08:38:10Z to 2026-10-24T08:38:10Z, users: www-data
+6. **HIGH** login_success from malicious ip 198.51.100.23 on app-02 (confidence: medium)
+   - 1 event(s), 2026-10-24T08:40:05Z to 2026-10-24T08:40:05Z, users: j.ali
+7. **MEDIUM** logout from malicious ip 198.51.100.23 on app-02 (confidence: medium)
+   - 1 event(s), 2026-10-24T08:41:00Z to 2026-10-24T08:41:00Z, users: j.ali
+8. **HIGH** login_failed from malicious ip 203.0.113.45 on app-03 (confidence: high)
+   - 1 event(s), 2026-10-24T08:52:19Z to 2026-10-24T08:52:19Z, users: admin

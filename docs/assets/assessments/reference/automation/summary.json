@@ -1,0 +1,164 @@
+{
+  "lines_read": 30,
+  "events_normalised": 27,
+  "skipped": [
+    {
+      "line": 28,
+      "reason": "json decode error",
+      "raw": "{\"ts\": \"2026-10-24T09:11:00Z\", \"host\": \"app-02\", \"user\": \"svc_report\", \"action\":"
+    },
+    {
+      "line": 29,
+      "reason": "csv record has 4 fields, expected 5",
+      "raw": "2026-10-24T09:12:00Z,app-02,svc_report,login_success"
+    },
+    {
+      "line": 30,
+      "reason": "unrecognised format",
+      "raw": "<<< rotation marker >>>"
+    }
+  ],
+  "by_format": {
+    "syslog": 9,
+    "csv": 8,
+    "json": 10
+  },
+  "by_action": {
+    "login_failed": 9,
+    "login_success": 9,
+    "logout": 1,
+    "dns_query": 6,
+    "http_request": 2
+  },
+  "top_sources": [
+    [
+      "198.51.100.23",
+      6
+    ],
+    [
+      "203.0.113.45",
+      5
+    ],
+    [
+      "10.10.20.14",
+      5
+    ]
+  ],
+  "findings": [
+    {
+      "title": "login_failed from malicious ip 203.0.113.45 on web-01",
+      "severity": "high",
+      "indicator": "203.0.113.45",
+      "indicator_type": "ip",
+      "confidence": "high",
+      "source": "feed-alpha",
+      "count": 3,
+      "first_seen": "2026-10-24T08:12:03Z",
+      "last_seen": "2026-10-24T09:10:00Z",
+      "users": [
+        "admin",
+        "oracle",
+        "root"
+      ]
+    },
+    {
+      "title": "login_failed from malicious ip 198.51.100.23 on db-01",
+      "severity": "medium",
+      "indicator": "198.51.100.23",
+      "indicator_type": "ip",
+      "confidence": "medium",
+      "source": "feed-beta",
+      "count": 3,
+      "first_seen": "2026-10-24T08:15:44Z",
+      "last_seen": "2026-10-24T08:16:20Z",
+      "users": [
+        "postgres"
+      ]
+    },
+    {
+      "title": "dns_query from malicious domain cdn-sync.example on ws-014",
+      "severity": "high",
+      "indicator": "cdn-sync.example",
+      "indicator_type": "domain",
+      "confidence": "high",
+      "source": "feed-alpha",
+      "count": 4,
+      "first_seen": "2026-10-24T08:25:33Z",
+      "last_seen": "2026-10-24T09:07:12Z",
+      "users": [
+        "m.hassan"
+      ]
+    },
+    {
+      "title": "http_request from malicious ip 198.51.100.23 on web-01",
+      "severity": "medium",
+      "indicator": "198.51.100.23",
+      "indicator_type": "ip",
+      "confidence": "medium",
+      "source": "feed-beta",
+      "count": 1,
+      "first_seen": "2026-10-24T08:37:00Z",
+      "last_seen": "2026-10-24T08:37:00Z",
+      "users": [
+        "www-data"
+      ]
+    },
+    {
+      "title": "http_request from malicious ip 203.0.113.45 on web-01",
+      "severity": "high",
+      "indicator": "203.0.113.45",
+      "indicator_type": "ip",
+      "confidence": "high",
+      "source": "feed-alpha",
+      "count": 1,
+      "first_seen": "2026-10-24T08:38:10Z",
+      "last_seen": "2026-10-24T08:38:10Z",
+      "users": [
+        "www-data"
+      ]
+    },
+    {
+      "title": "login_success from malicious ip 198.51.100.23 on app-02",
+      "severity": "high",
+      "indicator": "198.51.100.23",
+      "indicator_type": "ip",
+      "confidence": "medium",
+      "source": "feed-beta",
+      "count": 1,
+      "first_seen": "2026-10-24T08:40:05Z",
+      "last_seen": "2026-10-24T08:40:05Z",
+      "users": [
+        "j.ali"
+      ]
+    },
+    {
+      "title": "logout from malicious ip 198.51.100.23 on app-02",
+      "severity": "medium",
+      "indicator": "198.51.100.23",
+      "indicator_type": "ip",
+      "confidence": "medium",
+      "source": "feed-beta",
+      "count": 1,
+      "first_seen": "2026-10-24T08:41:00Z",
+      "last_seen": "2026-10-24T08:41:00Z",
+      "users": [
+        "j.ali"
+      ]
+    },
+    {
+      "title": "login_failed from malicious ip 203.0.113.45 on app-03",
+      "severity": "high",
+      "indicator": "203.0.113.45",
+      "indicator_type": "ip",
+      "confidence": "high",
+      "source": "feed-alpha",
+      "count": 1,
+      "first_seen": "2026-10-24T08:52:19Z",
+      "last_seen": "2026-10-24T08:52:19Z",
+      "users": [
+        "admin"
+      ]
+    }
+  ],
+  "finding_count": 8
+}

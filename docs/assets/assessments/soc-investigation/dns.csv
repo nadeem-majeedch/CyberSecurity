@@ -1,0 +1,10 @@
+ts_local,host,query,qtype,answer
+09:01:50,WS-014,cdn-sync.example,A,203.0.113.66
+09:02:20,WS-014,outlook.office365.example,A,198.51.100.10
+09:04:10,FS-01,files.corp.example,A,10.10.20.21
+09:07:00,WS-014,cdn-sync.example,TXT,"""k=v1"""
+09:12:00,WS-014,cdn-sync.example,TXT,"""k=v2"""
+09:13:30,DC-01,time.windows.example,A,203.0.113.5
+09:17:00,WS-014,cdn-sync.example,TXT,"""k=v3"""
+09:22:00,WS-014,cdn-sync.example,TXT,"""k=v4"""
+09:23:40,WS-014,telemetry.vendor.example,A,198.51.100.44

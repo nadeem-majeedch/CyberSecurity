@@ -1,0 +1,35 @@
+# Build and runtime artefacts
+.venv/
+venv/
+site/
+.cache/
+./freebuff
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Local scratch and lab artefacts
+tmp/
+*.log
+*.pcap
+*.pcapng
+*.E01
+*.raw
+
+# Never commit credentials or keys
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+*.kdbx
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.preview.log
+.preview.pid

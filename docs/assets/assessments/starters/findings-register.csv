@@ -1,0 +1,5 @@
+finding_id,title,class,owasp_ref,asset,account_used,reproduction,evidence_file,severity,severity_rationale,fix_type,remediation,retest_status
+F-01,,,A01,,,,"",,,fix,,
+F-02,,,A05,,,,"",,,fix,,
+F-03,,,A01,,,,"",,,mitigation,,
+F-04,,,A07,,,,"",,,fix,,
