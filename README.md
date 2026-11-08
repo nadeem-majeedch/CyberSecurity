@@ -1,4 +1,4 @@
-# Cyber Security — A Guided Self-Study Program
+# Cyber Security with Kali Linux - A Guided Self-Study Program
 
 A complete, safety-first cybersecurity curriculum for university students and independent learners: from first
 principles to a portfolio-grade capstone. It is written to be studied alone or taught in a classroom, and every
