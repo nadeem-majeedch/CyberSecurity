@@ -74,11 +74,11 @@ By the end of the program, a learner who has completed the labs and assessments 
 
 | Level | Theme | Modules | Labs | Guided hours |
 | --- | --- | --- | --- | --- |
-| [1 — Foundations](docs/levels/level-1.md) | Security concepts, ethics and law, computing, networking, Linux, Windows, virtualization, cryptography basics | 15 | 11 | ~52 |
-| [2 — Tooling and Lab Craft](docs/levels/level-2.md) | Command line, scripting, reconnaissance, packet analysis, SSH, host assessment | 6 of 8 | 18 | ~90 |
-| [3 — Applications, Cryptography and Identity](docs/levels/level-3.md) | HTTP and browser security, injection, access control, file handling, secure coding, APIs | 6 of 8 | 17 | ~68 |
-| [4 — Defensive Operations](docs/levels/level-4.md) | SOC operations, endpoint telemetry, hardening, detection and SIEM, network defence, forensics, incident response | 7 | 22 | ~86 |
-| [5 — Advanced Practice](docs/levels/level-5.md) | Engagement methodology, Active Directory, cloud, malware analysis, security automation, threat hunting | 6 of 8 | 18 | ~70 |
+| [1. Foundations](docs/levels/level-1.md) | Security concepts, ethics and law, computing, networking, Linux, Windows, virtualization, cryptography basics | 15 | 11 | ~52 |
+| [2. Tooling and Lab Craft](docs/levels/level-2.md) | Command line, scripting, reconnaissance, packet analysis, SSH, host assessment | 6 of 8 | 18 | ~90 |
+| [3. Applications, Cryptography and Identity](docs/levels/level-3.md) | HTTP and browser security, injection, access control, file handling, secure coding, APIs | 6 of 8 | 17 | ~68 |
+| [4. Defensive Operations](docs/levels/level-4.md) | SOC operations, endpoint telemetry, hardening, detection and SIEM, network defence, forensics, incident response | 7 | 22 | ~86 |
+| [5. Advanced Practice](docs/levels/level-5.md) | Engagement methodology, Active Directory, cloud, malware analysis, security automation, threat hunting | 6 of 8 | 18 | ~70 |
 | [Capstone](docs/projects/index.md) | Six briefs: network assessment, web application security, SOC investigation, Linux hardening, threat detection, security automation | — | — | ~48 |
 
 **Sequence.** Level 1 → Level 2 → Levels 3 and 4 (either order, though Level 3 supplies the web and identity
